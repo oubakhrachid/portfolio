@@ -1,180 +1,661 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-                <li><a href="#formations">Formations</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#langues">Langues</a></li>
-                <li><a href="mailto:votremail@example.com">📧 Contact</a></li>
-                <li><a href="tel:+33123456789">📞 Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Rachid OUBAKH</h1>
+    </a>
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+    
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Accueil</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i>À propos</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i>Curriculum Vitae</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i>Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i>Services</a></li>
+        <li class="dropdown">
+          <a href="#"><i class="bi bi-menu-button navicon"></i><span>Déroulant</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Déroulant 1</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Sous-Déroulant</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Sous-Déroulant 1</a></li>
+                <li><a href="#">Sous-Déroulant 2</a></li>
+                <li><a href="#">Sous-Déroulant 3</a></li>
+                <li><a href="#">Sous-Déroulant 4</a></li>
+                <li><a href="#">Sous-Déroulant 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Déroulant 2</a></li>
+            <li><a href="#">Déroulant 3</a></li>
+            <li><a href="#">Déroulant 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i>Contact</a></li>
+      </ul>
+    </nav>
+    
+
+  </header>
+
+  <main class="main">
+
+   <!-- Hero Section -->
+<section id="hero" class="hero section dark-background custom-hero-height">
+
+  <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <h2>Rachid OUBAKH</h2>
+    <p>Je suis <span class="typed" data-typed-items="Développeur Web, Support Technique, Développeur Mobile">Développeur Web</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+  </div>
+
+</section>
+
+
+    </section><!-- /Hero Section -->
+
+   <!-- About Section -->
+<section id="about" class="about section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>À propos</h2>
+    <p>Je possède une solide expertise en HTML, CSS, JavaScript, PHP et SQL, et je suis reconnu pour ma capacité à résoudre des défis techniques de manière innovante. J'excelle dans la gestion de projets complexes en collaboration efficace et autonome.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4 justify-content-center">
+      <div class="col-lg-4">
+        <img src="https://via.placeholder.com/300" class="img-fluid" alt="Image de profil">
+      </div>
+      <div class="col-lg-8 content">
         <h2>À propos de moi</h2>
-        <p>Développeur passionné par la création de solutions web innovantes et efficaces. Fort de plusieurs expériences professionnelles enrichissantes, je maîtrise diverses technologies et langages de programmation.</p>
-    </section>
-
-    <section id="experiences">
-        <h2>💼 Expériences</h2>
-        <div class="card">
-            <div class="experience-card">
-                <img src="https://media.licdn.com/dms/image/D4E0BAQHCrB1kCMTzRg/company-logo_200_200/0/1708350140128/bigdataconsulting_logo?e=2147483647&v=beta&t=MbMzstX8-TOZI5t39VfuelMKZ2QEWwpFzXrv5RnS8vs" alt="Big Data Consulting" class="company-logo">
-                <div>
-                    <h3>Consultant - Big Data Consulting, Asnières-sur-Seine</h3>
-                    <p>📅 Janvier 2022 - Juillet 2022</p>
-                    <ul>
-                        <li>🔍 Utilisation de Tradexpress et EDI pour l'intégration de données</li>
-                        <li>🤝 Consultation pour des clients tels qu'Atos et Safran Aircraft</li>
-                        <li>📊 Analyse des besoins clients et mise en place de solutions adaptées</li>
-                        <li>🌐 Développement et maintenance de sites web en HTML, CSS, JavaScript, PHP et Python</li>
-                        <li>🗄 Gestion de bases de données avec Microsoft SQL</li>
-                        <li>🎨 Création d'interfaces utilisateur intuitives et réactives</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="experience-card">
-                <img src="https://media.licdn.com/dms/image/D560BAQEoAn2RdE4wyg/company-logo_200_200/0/1693233785918/nibelis_logo?e=2147483647&v=beta&t=0IxG-c-YypSLKNtsdwlpU_lxavAUBi9W5D6ygh1fOQA" alt="Nibelis" class="company-logo">
-                <div>
-                    <h3>Développeur Web - Nibelis, Levallois-Perret, France</h3>
-                    <p>📅 Juillet 2021 - Décembre 2021</p>
-                    <ul>
-                        <li>💻 Développement d'outils internes en HTML, JavaScript (AJAX) et PL/SQL (Oracle)</li>
-                        <li>📊 Création de nouveaux états de gestion et modules RH et paie</li>
-                        <li>🔄 Maintenance et développement d'évolutions fonctionnelles sur la solution de paye de l'entreprise</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="experience-card">
-                <img src="https://mail.google.com/mail/u/0?ui=2&ik=e1d7ebb216&attid=0.1&permmsgid=msg-f:1608312797058135598&th=1651dff7bc5d762e&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8io1pQGiKU0OrwV4ES0VzfBSOgz30Kc_g_HEmjkAlQaxR5fJv4VFBS1BPBU5dta8cxZt3hAM7-TjuxKwxC9doT6DbEZBXfF8NA7aQo871sk_CQl08GcWGZHog&disp=emb" alt="ADMI" class="company-logo">
-                <div>
-                    <h3>Développeur Web - ADMI, Courbevoie</h3>
-                    <p>📅 Juin 2018 - Décembre 2018</p>
-                    <ul>
-                        <li>⚙️ Développement full-stack PHP, JavaScript (jQuery) et HTML/CSS</li>
-                        <li>⏱️ Respect des procédures et des délais fixés par la direction technique</li>
-                        <li>🤝 Collaboration étroite avec les départements de développement et de marketing</li>
-                    </ul>
-                </div>
-            </div>
+        <p class="fst-italic py-3">
+          Passionné par le développement logiciel, je suis reconnu pour ma capacité à résoudre des problèmes techniques de manière innovante. J'ai une expérience avérée dans la gestion de projets complexes en collaboration efficace et autonome.
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Âge :</strong> <span>26 ans</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Téléphone :</strong> <span>+33 7 80 79 25 96</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Ville :</strong> <span>Puteaux, France</span></li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <strong>Email :</strong> <span>oubakhpro@gmail.com</span></li>
+              <li><i class="bi bi-chevron-right"></i> <strong>Actuellement :</strong> <span>Disponible</span></li>
+            </ul>
+          </div>
         </div>
-    </section>
+        <p class="py-3">
+          Actuellement disponible pour un poste de développeur logiciel au sein d'une entreprise, je suis passionné par l'innovation technologique et je m'intéresse à divers domaines comme la musique, les films, les escape games et les nouvelles technologies.
+        </p>
+      </div>
+    </div>
 
-    <section id="formations">
-        <h2>🎓 Formations</h2>
-        <div class="card">
-            <div class="experience-card">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxUhSQOUFe3Cp9B3vM9W0h5VDtsqChK5iC2g&s" alt="Linagora Academy" class="company-logo">
+  </div>
+
+</section><!-- /About Section -->
+<!-- Resume Section -->
+<section id="resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Curriculum Vitae</h2>
+    <p>Passionné par le développement logiciel avec une solide expertise 🌟</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="resume-title">Mon Parcours</h3>
+
+        <div class="resume-item pb-0">
+          <h4>Rachid Oubakh</h4>
+          <p><em>Développeur Web Full-Stack avec une solide expertise en HTML, CSS, JavaScript, PHP et SQL, reconnu pour sa capacité à résoudre des problèmes techniques de manière innovante. Excellente compétence dans la gestion de projets complexes en collaboration efficace et autonome.</em></p>
+          <ul>
+            <li>Localisation : Puteaux (92) 🏙️</li>
+            <li>Téléphone : +33 7 80 79 25 96 ☎️</li>
+            <li>Email : oubakhpro@gmail.com 📧</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+        <h3 class="resume-title">Formations 🎓</h3>
+
+        <div class="resume-item">
+          <h4>Formation Développeur Full Stack</h4>
+          <h5>Février 2018 - Août 2018</h5>
+          <p><em>Linagora Academy 📚</em></p>
+          <ul>
+            <li>🌐 Développement front-end avec HTML, CSS, JavaScript</li>
+            <li>⚙️ Implémentation de logique back-end avec Node.js et frameworks associés</li>
+            <li>🗃️ Gestion et optimisation de bases de données SQL et NoSQL</li>
+            <li>🔧 Configuration et déploiement de systèmes en environnement DevOps</li>
+            <li>📝 Documentation technique et bonnes pratiques de développement</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+        <div class="resume-item">
+          <h4>Formation Développeur Web</h4>
+          <h5>Avril 2017 - Octobre 2017</h5>
+          <p><em>École 42 🎓</em></p>
+          <ul>
+            <li>🤝 Projets collaboratifs en développement web et logiciel</li>
+            <li>💻 Apprentissage des langages de programmation : HTML, CSS, JavaScript</li>
+            <li>🏆 Participation à des hackathons et défis de programmation</li>
+            <li>🌐 Développement de projets web complets de A à Z</li>
+            <li>👥 Travail en peer-to-peer pour résoudre des problèmes complexes</li>
+            <li>🔍 Implémentation des algorithmes et structures de données avancées</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+        <div class="resume-item">
+          <h4>Formation Développeur Web Junior</h4>
+          <h5>Janvier 2016 - Octobre 2016</h5>
+          <p><em>OpenClassrooms 📚</em></p>
+          <ul>
+            <li>👨‍💻 Introduction aux bases du développement web</li>
+            <li>🔤 Apprentissage de HTML et CSS pour la création de sites web simples</li>
+            <li>🔧 Compréhension des concepts fondamentaux de JavaScript</li>
+            <li>🛠️ Mise en œuvre de projets pratiques pour consolider les compétences</li>
+            <li>🌐 Introduction aux frameworks et outils de développement</li>
+            <li>📝 Travail sur des exercices et des projets pour renforcer l'apprentissage</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="resume-title">Expérience Professionnelle 💼</h3>
+
+        <div class="resume-item">
+          <h4>Développeur Web Full-Stack</h4>
+          <h5>Janvier 2022 - Janvier 2024</h5>
+          <p><em>BIG DATA CONSULTING, Asnières-sur-Seine, 92 💼</em></p>
+          <ul>
+            <li>🌐 Développement d'applications web</li>
+            <li>🔧 Création de nouvelles fonctionnalités pour TradExpress</li>
+            <li>🛠️ Maintenance proactive et résolution des problèmes critiques</li>
+            <li>📝 Documentation technique et support aux utilisateurs finaux</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+        <div class="resume-item">
+          <h4>Développeur Web</h4>
+          <h5>Mai 2020 - Novembre 2021</h5>
+          <p><em>NIBELIS, Levallois-Perret, 92 🖥️</em></p>
+          <ul>
+            <li>🌐 Développement d'outils internes</li>
+            <li>📊 Création de nouveaux modules RH et paie</li>
+            <li>🛠️ Optimisation des applications existantes</li>
+            <li>📋 Conformité avec les normes de développement</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+        <div class="resume-item">
+          <h4>Développeur Web</h4>
+          <h5>Septembre 2018 - Janvier 2020</h5>
+          <p><em>A.D.M.I.N, Courbevoie, 92 💼</em></p>
+          <ul>
+            <li>🌐 Conception et développement d'outils internes</li>
+            <li>📊 Intégration de modules RH et paie</li>
+            <li>🔄 Amélioration continue des solutions de paye</li>
+            <li>🛠️ Respect rigoureux des normes de codage</li>
+          </ul>
+        </div><!-- End Resume Item -->
+
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Resume Section -->
+
+
+
+ <!-- Skills Section -->
+<section id="skills" class="skills section light-background">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>💻 Compétences 🌟</h2>
+    <p>Passionné par le développement logiciel avec une expertise solide</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row skills-content skills-animation">
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>HTML</span> <i class="val">95%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>JavaScript</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>SQL</span> <i class="val">75%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>ReactJS</span> <i class="val">70%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+      <div class="col-lg-6">
+
+        <div class="progress">
+          <span class="skill"><span>Node.js</span> <i class="val">65%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>WordPress/CMS</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Python</span> <i class="val">70%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Java</span> <i class="val">60%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Angular</span> <i class="val">65%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+        <div class="progress">
+          <span class="skill"><span>Bootstrap</span> <i class="val">85%</i></span>
+          <div class="progress-bar-wrap">
+            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div><!-- End Skills Item -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- End Skills Section -->
+
+
+   <!-- Services Section -->
+<section id="services" class="services section">
+
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Compétences et Contributions</h2>
+    <p>Expertise technique pour enrichir vos projets numériques</p>
+  </div><!-- End Section Title -->
+
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Développement Web Full-Stack</a></h4>
+          <p class="description">Conception et développement d'applications web innovantes avec expertise en HTML, CSS, JavaScript, PHP, SQL, et frameworks comme ReactJS, Node.js et Angular.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Développement d'Applications Mobiles</a></h4>
+          <p class="description">Création d'applications Android et iOS avec Dart, Flutter et Kotlin pour une expérience utilisateur optimale.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon flex-shrink-0"><i class="bi bi-gear"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Maintenance et Optimisation</a></h4>
+          <p class="description">Maintenance proactive et optimisation des applications web et mobiles pour assurer la performance et la fiabilité.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon flex-shrink-0"><i class="bi bi-palette"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">UI/UX Design</a></h4>
+          <p class="description">Conception de interfaces utilisateur intuitives et attrayantes pour une expérience utilisateur optimale.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon flex-shrink-0"><i class="bi bi-check-circle"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Tests et Débogage</a></h4>
+          <p class="description">Exécution de tests rigoureux et débogage pour assurer la qualité et la fiabilité des applications développées.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon flex-shrink-0"><i class="bi bi-pen"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Documentation Technique</a></h4>
+          <p class="description">Rédaction de documentation technique détaillée pour faciliter la maintenance et l'évolutivité des projets.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="700">
+        <div class="icon flex-shrink-0"><i class="bi bi-chat-dots"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Formation et Conseil</a></h4>
+          <p class="description">Formation personnalisée pour les équipes de développement et conseils stratégiques pour optimiser les processus.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="800">
+        <div class="icon flex-shrink-0"><i class="bi bi-server"></i></div>
+        <div>
+          <h4 class="title"><a href="service-details.html" class="stretched-link">Architecture de Systèmes</a></h4>
+          <p class="description">Conception d'architectures robustes et évolutives pour soutenir les besoins de l'entreprise à long terme.</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Services Section -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Témoignages</h2>
+    <p>Découvrez ce que disent mes anciens employeurs :</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "slidesPerView": "auto",
+          "pagination": {
+            "el": ".swiper-pagination",
+            "type": "bullets",
+            "clickable": true
+          },
+          "breakpoints": {
+            "320": {
+              "slidesPerView": 1,
+              "spaceBetween": 40
+            },
+            "1200": {
+              "slidesPerView": 3,
+              "spaceBetween": 1
+            }
+          }
+        }
+      </script>
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Grâce à Rachid, notre équipe a pu développer des applications web performantes et fiables qui ont considérablement amélioré notre efficacité opérationnelle.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/bigdataconsulting.jpeg" class="testimonial-img" alt="Témoignage 1">
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Le travail de Rachid dans l'intégration de nouveaux modules RH et paie a été crucial pour notre entreprise, améliorant significativement notre gestion administrative.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/nibelis.png" class="testimonial-img" alt="Témoignage 2">
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <p>
+              <i class="bi bi-quote quote-icon-left"></i>
+              <span>Nous sommes reconnaissants envers Rachid pour avoir stabilisé et amélioré la performance de notre solution de paie, assurant ainsi une gestion financière plus efficace.</span>
+              <i class="bi bi-quote quote-icon-right"></i>
+            </p>
+            <img src="assets/img/testimonials/admin.png" class="testimonial-img" alt="Témoignage 3">
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Je suis à votre écoute ! N'hésitez pas à me contacter.</p>
+
+      </div><!-- End Section Title -->
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+        <div class="row gy-4">
+    
+          <div class="col-lg-5">
+    
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
-                    <h3>Développeur Web / CMS - Linagora Academy, La Défense</h3>
-                    <p>📅 Janvier à Mai 2018</p>
-                    <ul>
-                        <li>🛠️ Développement (front-end et back-end)</li>
-                        <li>⚛️ Utilisation de JavaScript, PHP et frameworks (React, Node.js)</li>
-                        <li>📊 Conception et gestion de bases de données (SQL, NoSQL)</li>
-                    </ul>
+                  <h3>Appelez-moi</h3>
+                  <p>+33 7 80 79 25 96</p>
                 </div>
-            </div>
-            <div class="experience-card">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/42_Logo.svg/1200px-42_Logo.svg.png" alt="École 42" class="company-logo">
+              </div><!-- End Info Item -->
+    
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
-                    <h3>Développeur Full Stack - École 42, Paris</h3>
-                    <p>📅 Octobre à Décembre 2017</p>
-                    <ul>
-                        <li>🛠️ Apprentissage intensif du développement full-stack</li>
-                        <li>⚛️ Utilisation avancée de technologies telles que C, Python, et Shell</li>
-                        <li>🔧 Résolution de problèmes complexes à travers des projets individuels et collaboratifs</li>
-                        <li>📝 Participation active à des défis de programmation et hackathons</li>
-                    </ul>
+                  <h3>Email</h3>
+                  <p>oubakhpro@gmail.com</p>
                 </div>
+              </div><!-- End Info Item -->
+    
             </div>
+          </div>
+    
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+    
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Votre nom</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+    
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Votre email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+    
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Sujet</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+    
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+    
+                <div class="col-md-12 text-center">
+                  <div class="loading">Chargement en cours</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Votre message a été envoyé. Merci !</div>
+    
+                  <button type="submit">Envoyer le message</button>
+                </div>
+    
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+    
         </div>
-    </section>
+    
+      </div>
+    
+    </section><!-- /Contact Section -->
+    
 
-    <section id="competences">
-        <h2>💡 Compétences</h2>
-        <div class="card">
-            <div class="skill-card">
-                <img src="html.png" alt="HTML" class="skill-icon">
-                <img src="css.png" alt="CSS" class="skill-icon">
-                <img src="javascript.png" alt="JavaScript" class="skill-icon">
-                <img src="typescript.png" alt="TypeScript" class="skill-icon">
-                <p>Développement Web (HTML, CSS, JavaScript, TypeScript)</p>
-            </div>
-            <div class="skill-card">
-                <img src="react.png" alt="React" class="skill-icon">
-                <img src="vue.png" alt="Vue.js" class="skill-icon">
-                <img src="angular.png" alt="Angular" class="skill-icon">
-                <p>Frameworks Front-End (React, Vue.js, Angular)</p>
-            </div>
-            <div class="skill-card">
-                <img src="php.png" alt="PHP" class="skill-icon">
-                <img src="python.png" alt="Python" class="skill-icon">
-                <img src="java.png" alt="Java" class="skill-icon">
-                <img src="node.png" alt="Node.js" class="skill-icon">
-                <p>Technologies Back-End (PHP, Python, Java, Node.js)</p>
-            </div>
-            <div class="skill-card">
-                <img src="sql.png" alt="SQL" class="skill-icon">
-                <img src="mysql.png" alt="MySQL" class="skill-icon">
-                <img src="sqlite.png" alt="SQLite" class="skill-icon">
-                <img src="postgresql.png" alt="PostgreSQL" class="skill-icon">
-                <img src="oracle.png" alt="Oracle Database" class="skill-icon">
-                <img src="mssql.png" alt="Microsoft SQL Server" class="skill-icon">
-                <p>Gestion de bases de données (SQL, MySQL, SQLite, PostgreSQL, Oracle Database, Microsoft SQL Server)</p>
-            </div>
-            <div class="skill-card">
-                <img src="mongodb.png" alt="MongoDB" class="skill-icon">
-                <img src="mariadb.png" alt="MariaDB" class="skill-icon">
-                <p>Bases de données NoSQL (MongoDB, MariaDB)</p>
-            </div>
-            <div class="skill-card">
-                <img src="kotlin.png" alt="Kotlin" class="skill-icon">
-                <img src="reactnative.png" alt="React Native" class="skill-icon">
-                <img src="flutter.png" alt="Flutter" class="skill-icon">
-                <p>Développement Mobile (Kotlin, React Native, Flutter)</p>
-            </div>
-            <div class="skill-card">
-                <img src="bash.png" alt="Bash" class="skill-icon">
-                <img src="powershell.png" alt="PowerShell" class="skill-icon">
-                <p>Scripting (Bash, PowerShell)</p>
-            </div>
-            <div class="skill-card">
-                <img src="git.png" alt="Git" class="skill-icon">
-                <img src="github.png" alt="GitHub" class="skill-icon">
-                <p>Contrôle de Version (Git, GitHub)</p>
-            </div>
-        </div>
-    </section>
+  </main>
+  <footer id="footer" class="footer position-relative light-background">
 
-    <section id="langues">
-        <h2>🌍 Langues</h2>
-        <div class="card">
-            <div class="skill-card">
-                <p>🇫🇷 Français - Langue maternelle</p>
-            </div>
-            <div class="skill-card">
-                <p>🇬🇧 Anglais - Courant</p>
-            </div>
-            <div class="skill-card">
-                <p>🇪🇸 Espagnol - Intermédiaire</p>
-            </div>
-        </div>
-    </section>
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Droits d'auteur</span> <strong class="px-1 sitename">Rachid OUBAKH</strong> <span>Tous droits réservés</span></p>
+      </div>
+    </div>
+  
+  </footer>
+  
 
-    <footer>
-        <p>&copy; 2024 Mon CV. Tous droits réservés.</p>
-    </footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
